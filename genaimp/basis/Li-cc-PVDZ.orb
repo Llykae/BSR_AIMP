@@ -1,0 +1,18 @@
+* Occupied core orbitals for Li atom from CC-pVDZ basis
+/Li.cc-pVDZ.Dunning.9s.1s..
+* T.H. Dunning, Jr. J. Chem. Phys. 90, 1007 (1989).
+* LITHIUM      (9s,4p,1d) -> [3s,2p,1d]
+3.   0
+* S-type functions
+9    1
+1469.00000 220.50000 50.26000 14.24000 4.58100 1.58000 0.56400 0.07345 0.02805
+  0.00076600
+  0.00589200
+  0.02967100
+  0.10918000
+  0.28278900
+  0.45312300
+  0.27477400
+  0.00975100
+ -0.00318000
+

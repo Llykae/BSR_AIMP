@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------------
+2		Number of active electrons			-> nelc
+1		Number of cluster atoms with_basis		-> natm
+0		Number of polarizable matrix atoms with basis	-> nmtx0
+0		Number of polarizable matrix atoms without basis-> nmtx1
+0		Number of non polarizable matrix atoms		-> nmtx2
+1		Number of molecules				-> nmol
+-------------------------------------------------------------------------------------
+He      1       2      7200.0
+        +0.000000e+00   +0.000000e+00   +0.000000e+00
+        +0.000000e+00   +0.000000e+00   +0.000000e+00
+        basis/Xe-cc-PVTZDK3.orb
+        pspot/ps_he2-e2.dat
