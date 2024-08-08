@@ -292,7 +292,7 @@ void mkvvex(int nb, int kb, double *tn, int l, struct bsp_basis *bss, struct vxa
          for(ix=1;ix<=nx;ix++) vvx[ib][jb] -= biga[ib][ix]*wbx[jb][ix];
          vvx[jb][ib] = vvx[ib][jb];				//set transposed element
          }
-   prmatxr2(11,20,vvx);
+   //prmatxr2(11,20,vvx);
 //-------------------------------------
       free_dmatrix(biga,1,nb,1,nx);
       free_dmatrix(wbx,1,nb,1,nx);

@@ -68,7 +68,7 @@ void init_basis(int icontinuum, int kb, int nspline, double *tn, int *nbasis, st
    switch(icontinuum)
       {
       case 0:						//generates nbsplines-1 functions fn with fn(xmax) = fn(0) = 0.0
-         printf("icontinuum = %d \n",icontinuum);
+         //printf("icontinuum = %d \n",icontinuum);
 	 for(n=2;n<nspline;n++)
             {
             m = n - 1;
@@ -85,7 +85,7 @@ void init_basis(int icontinuum, int kb, int nspline, double *tn, int *nbasis, st
          break;
 
       case 1:
-         printf("icontinuum = %d \n",icontinuum);
+         //printf("icontinuum = %d \n",icontinuum);
 	 for(n=2;n<nspline-1;n++)
             {
             m = n - 1;
