@@ -23,7 +23,7 @@
 #define LANG 0						                    //ANGULAR MOMENTUM
 #define LMAX 2
 #define Nk 500                                //NUMBER OF K POINT FOR TCS EVALUATION (500 = 13.605eV APPROXIMATIVELY)
-#define DKH 0                                 //SIGN = 0, Without DKH. SIGN = 1, With DKH. SIGN = 2, bsprelat.
+#define DKH 0                                 //SIGN = 0, Without DKH. SIGN = 1, With DKH
 #define TDSWC 0                               //0 = TCS  -   1 = DCS
 
 #define SIZE 2                                //NUMBER OF K POINT (IN TERMS OF ENERGY)
@@ -32,7 +32,7 @@
 #define EXTRACTION_DCS_NAME "Williams"        //OUTPUT LOCATION FOR DCS EXTRACTION - ONLY NAME - MAKE SURE TO CREATE DIRECTORY BEFORE
 #define EXTRACTION_DCS_FILE "Williams.data"                //FILE WITH PHASE-SHIFT TO USE FOR DCS EVALUATION
 
-#define POLA  0                               //IN CASE YOU WANT DATA PLOT FOR POLARISATION POTENTIAL
+#define POLA  0                               //IN CASE YOU WANT DATA PLOT FOR POLARISATION POTENTIAL CHANGE FOR 1
 
 
 #include "str.h"
