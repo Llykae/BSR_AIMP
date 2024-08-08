@@ -28,7 +28,7 @@
 
 #define SIZE 2                                //NUMBER OF K POINT (IN TERMS OF ENERGY)
 #define DCS_LMAX 3                            //NUMBER OF ANGULAR MOMENTUM IN THE INPUT FILE - CAN'T BE CHANGED FOR NOW
-#define EXTRACTION_DCS 0                      //0 FOR YES - 1 FOR NO
+#define EXTRACTION_DCS 1                      //0 FOR YES - 1 FOR NO
 #define EXTRACTION_DCS_NAME "Williams"        //OUTPUT LOCATION FOR DCS EXTRACTION - ONLY NAME - MAKE SURE TO CREATE DIRECTORY BEFORE
 #define EXTRACTION_DCS_FILE "Williams.data"                //FILE WITH PHASE-SHIFT TO USE FOR DCS EVALUATION
 
