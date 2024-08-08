@@ -1,4 +1,4 @@
-void readvaipp(struct vxaimp *pspa);
+void readvaipp(struct vxaimp *pspa,struct param_pola *ppola);
 //---
 void bbvex(int nb, int kb,  double *tn, int l, struct bsp_basis *bss, struct vxaimp *pspa, double **vvx);
 //---
@@ -14,7 +14,7 @@ void bbvpa(int nb, int kb,  double *tn, int l, struct bsp_basis *bss, struct vxa
    the input file "genaimp/output/vaimp.out".
    The parameters are stored in the structure pspa.
 ---------------------------------------------------------------------------*/
-void readvaipp(struct vxaimp *pspa)
+void readvaipp(struct vxaimp *pspa,struct param_pola *ppola)
 {
    char kw0[2];
    char kwvex[10];
@@ -22,6 +22,7 @@ void readvaipp(struct vxaimp *pspa)
    char kwato[5];
    char kwepa[7];
 //--------------
+   char *fname;
    FILE *fin;
    char string[512];
    //char word[32];
@@ -46,7 +47,9 @@ void readvaipp(struct vxaimp *pspa)
    strcpy(kwvex,"VEXCHANGE");					//VEXCHANGE keyword
 
 //-------------------------------------
-   if((fin = fopen("genaimp/output/vaimp.out","r")) == NULL)
+   fname = (char *) malloc(200*sizeof(char));
+   sprintf(fname,"genaimp/output/vaimp_%s.out",ppola->atom);
+   if((fin = fopen(fname,"r")) == NULL)
       {
       printf("Cannot open input file : genaimp/output/vaimp.out\n");
       exit(1);
@@ -63,7 +66,7 @@ void readvaipp(struct vxaimp *pspa)
    fclose(fin);
 
 //-------------------------------------
-   if((fin = fopen("genaimp/output/vaimp.out","r")) == NULL)
+   if((fin = fopen(fname,"r")) == NULL)
       {
       printf("Cannot open input file : genaimp/output/vaimp.out\n");
       exit(1);
@@ -107,7 +110,7 @@ void readvaipp(struct vxaimp *pspa)
    fclose(fin);
 
 //-------------------------------------
-   if((fin = fopen("genaimp/output/vaimp.out","r")) == NULL)
+   if((fin = fopen(fname,"r")) == NULL)
       {
       printf("Cannot open input file : genaimp/output/vaimp.out\n");
       exit(1);
@@ -122,7 +125,7 @@ void readvaipp(struct vxaimp *pspa)
    printf("epauli = %+le \n",pspa->epauli);
 
 //-------------------------------------
-   if((fin = fopen("genaimp/output/vaimp.out","r")) == NULL)
+   if((fin = fopen(fname,"r")) == NULL)
       {
       printf("Cannot open input file : genaimp/output/vaimp.out\n");
       exit(1);

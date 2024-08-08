@@ -101,9 +101,7 @@ int main()
 
   double **dkh_hdk2, **vcrelat;
 
-  printf("\n                              START READING BASIS AND POTENTIAL\n\n");
-  readvaipp(&pspa);
-  printf("\n\n\n                                 START PHASE SHIFT ANALYSIS\n\n");
+ 
 
   ppola=malloc(sizeof(struct param_pola));
   switch(NOBLE_ATOM)
@@ -129,6 +127,10 @@ int main()
     break;      
   }
   
+  printf("\n                              START READING BASIS AND POTENTIAL\n\n");
+  readvaipp(&pspa,ppola);
+  printf("\n\n\n                                 START PHASE SHIFT ANALYSIS\n\n");
+
   data = (char *) malloc(200*sizeof(char));
   sprintf(data,"./basis_set/%s_basis_set.dat",ppola->atom);
 
