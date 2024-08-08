@@ -19,7 +19,7 @@
 #include "bessel.c"
 
 #define ICONTINUUM 1			                    //set continuum switch to ensure outer boundary condition
-#define NOBLE_ATOM 0                          //0 = He / 1 = Ne / 2 = Ar / 3 = Kr / 4 = Xe
+#define NOBLE_ATOM 2                          //0 = He / 1 = Ne / 2 = Ar / 3 = Kr / 4 = Xe
 #define LANG 0						                    //ANGULAR MOMENTUM
 #define LMAX 2
 #define Nk 500                                //NUMBER OF K POINT FOR TCS EVALUATION (500 = 13.605eV APPROXIMATIVELY)
